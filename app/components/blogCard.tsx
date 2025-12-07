@@ -2,6 +2,8 @@ import Image from "next/image";
 import Blog from "@/app/utils/blog";
 import Link from "next/link";
 
+
+
 export default function BlogCard(blog: Blog) {
     return (
 
@@ -16,9 +18,8 @@ export default function BlogCard(blog: Blog) {
             </div>
             <div className="p-4 text-left">
                 <h2 className="text-xl font-bold mb-1">{blog.title}</h2>
-                <p className="text-sm">{blog.description.slice(0,50)}...</p>
-                
-                <p className="text-sm text-gray-600">Por: {blog.author}</p>
+                <p className="text-sm">{blog.description.slice(0,70)}...</p>
+                <p className="text-sm text-gray-600 mt-5">Por: {blog.author}</p>
                 <p className="text-xs text-gray-500">Fecha: {blog.date}</p>
                 <Link href={`blogs/${blog.id}`}>
                     <button className="mt-2 p-2 bg-blue-600 text-white rounded-lg shadow-lg">
