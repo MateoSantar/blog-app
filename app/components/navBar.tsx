@@ -1,0 +1,18 @@
+import Link from "next/link";
+export default function Navbar() {
+    return (
+        <nav className="bg-gray-600 text-white p-5 pl-7 text-3xl flex flex-row gap-7 justify-start items-center">
+            <h1 className="font-medium">GFG Blogs</h1>
+            <Link
+                href={'/'}
+                className="text-2xl">
+                Home
+            </Link>
+            <Link
+            href={'blogCreation'}
+            className="text-2xl">
+                Create new Blog
+            </Link>
+        </nav>
+    );
+}
