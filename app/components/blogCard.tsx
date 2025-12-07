@@ -23,7 +23,7 @@ export default function BlogCard(blog: Blog) {
                 <p className="text-xs text-gray-500">Fecha: {blog.date}</p>
                 <Link href={`blogs/${blog.id}`}>
                     <button className="mt-2 p-2 bg-blue-600 text-white rounded-lg shadow-lg">
-                        Read more
+                        Leer más
                     </button>
                 </Link>
             </div>
